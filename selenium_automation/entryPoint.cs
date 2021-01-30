@@ -1,7 +1,7 @@
 ﻿using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-
+using System.Threading;
 
 namespace selenium_automation
 {
@@ -9,9 +9,14 @@ namespace selenium_automation
     {
         static void Main()
         {
-            Menu menu = new Menu();
+            
             Driver.driver.Navigate().GoToUrl("https://testing.todorvachev.com/");
-            menu.Selectors.Click();
+            NavigateTo.LoginFormThroughTheMenu();
+            Thread.Sleep(500);
+
+            Driver.driver.Navigate().GoToUrl("https://testing.todorvachev.com/");
+            NavigateTo.LoginFormThroughThePost();
+            Thread.Sleep(5000);
         }
     }
 }
