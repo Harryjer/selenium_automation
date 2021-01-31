@@ -25,7 +25,8 @@ namespace selenium_automation
                 }
                 public static class Password
                 {
-
+                    public static string FourCharactors = "asdf";
+                    public static string ThirteenCharactors = "AsdfAsdfAsdfG";
                 }
                 public static class Email
                 {
@@ -36,6 +37,8 @@ namespace selenium_automation
         public static class AlertMessages
         {
             public static string SuccessfullLogin = "Successfulll Login";
+            public static string UsernameLengthOutofRange = "Username length is out of range";
+            public static string PasswordLengthOutofRange = "Password length is out of range";
         }
     }
 }

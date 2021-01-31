@@ -5,6 +5,8 @@ using System.Threading;
 using static System.Console;
 using static System.Math;
 using selenium_automation.UIelements;
+using System;
+
 namespace selenium_automation
 {
     public static class Action
@@ -21,6 +23,11 @@ namespace selenium_automation
             lsPost.PasswordField.SendKeys(password);
             lsPost.RepeatPasswordField.SendKeys(repeatPassword);
             lsPost.LoginButton.Click();
+        }
+
+        internal static void FillLoginForm(string username, object fourCharactors1, object fourCharactors2)
+        {
+            throw new NotImplementedException();
         }
     }
 }
