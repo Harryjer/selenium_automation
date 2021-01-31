@@ -33,5 +33,9 @@ namespace selenium_automation
                 }
             }
         }
+        public static class AlertMessages
+        {
+            public static string SuccessfullLogin = "Successfulll Login";
+        }
     }
 }

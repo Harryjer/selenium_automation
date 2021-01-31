@@ -9,6 +9,10 @@ namespace selenium_automation
 {
     public static class Action
     {
+        public static void InitializedDriver()
+        {
+            Driver.driver.Navigate().GoToUrl(Config.BaseUrl);
+        }
         public static void FillLoginForm(string username, string password, string repeatPassword)
         {
             LoginScenarioPost lsPost = new LoginScenarioPost();
