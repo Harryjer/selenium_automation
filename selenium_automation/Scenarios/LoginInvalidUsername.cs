@@ -19,7 +19,7 @@ namespace selenium_automation.Scenarios
         public void Initialize()
         {
             Action.InitializedDriver();
-            NavigateTo.LoginFormThroughThePost();
+            NavigateTo.LoginFormThroughTheMenu();
         }
 
         [Test]
